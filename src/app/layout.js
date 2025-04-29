@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <SettingsProvider>
             <TooltipProvider delayDuration={0}>
-            <SidebarProvider>
+            {/* <SidebarProvider> */}
               <div className="min-h-screen flex bg-background text-foreground">
                 <Sidebar />
                 <div className="flex-1">
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
               </div>
-              </SidebarProvider>
+              {/* </SidebarProvider> */}
             </TooltipProvider>
           </SettingsProvider>
           <Toaster />
