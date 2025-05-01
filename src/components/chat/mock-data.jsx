@@ -2,7 +2,7 @@
 export const mockConversations = [
     {
       id: "conv-1",
-      name: "Sarah Wilson",
+      name: "satish-rathod",
       avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
       lastMessage: {
         content: "Can you send me the financial report?",
@@ -85,7 +85,7 @@ export const mockConversations = [
         },
         {
           id: "user-6",
-          name: "Sarah Wilson",
+          name: "satish-rathod",
           avatar:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
           isAdmin: false,
@@ -121,11 +121,11 @@ export const mockConversations = [
   
   // Mock data for messages
   export const mockMessages = [
-    // Conversation 1 - Sarah Wilson
+    // Conversation 1 - satish-rathod
     {
       id: "msg-1-1",
       conversationId: "conv-1",
-      senderId: "sarah-wilson",
+      senderId: "satish-rathod",
       content: "Hi there! How's the quarterly financial report coming along?",
       timestamp: "2023-07-20T14:25:00Z",
       status: "read",
@@ -135,7 +135,7 @@ export const mockConversations = [
       id: "msg-1-2",
       conversationId: "conv-1",
       senderId: "current-user",
-      content: "Hey Sarah! It's almost done. Just finalizing some numbers.",
+      content: "Hey Satish! It's almost done. Just finalizing some numbers.",
       timestamp: "2023-07-20T14:27:00Z",
       status: "read",
       type: "text",
@@ -143,7 +143,7 @@ export const mockConversations = [
     {
       id: "msg-1-3",
       conversationId: "conv-1",
-      senderId: "sarah-wilson",
+      senderId: "satish-rathod",
       content: "Great! When do you think you can send it over?",
       timestamp: "2023-07-20T14:28:00Z",
       status: "read",
@@ -161,7 +161,7 @@ export const mockConversations = [
     {
       id: "msg-1-5",
       conversationId: "conv-1",
-      senderId: "sarah-wilson",
+      senderId: "satish-rathod",
       content: "Can you send me the financial report?",
       timestamp: "2023-07-20T14:30:00Z",
       status: "delivered",
@@ -170,7 +170,7 @@ export const mockConversations = [
     {
       id: "msg-1-6",
       conversationId: "conv-1",
-      senderId: "sarah-wilson",
+      senderId: "satish-rathod",
       content: "Actually, could you share it here instead? It would be easier to discuss.",
       timestamp: "2023-07-20T14:31:00Z",
       status: "delivered",
