@@ -299,7 +299,61 @@ function getPayloadConfigFromPayload(
     : config[key];
 }
 
+const Chart = React.forwardRef(({ className, ...props }, ref) => {
+    return (
+      <div
+        className={cn("rounded-md border bg-card text-card-foreground shadow-sm", className)}
+        ref={ref}
+        {...props}
+      />
+    );
+  });
+  
+  Chart.displayName = "Chart";
+
+const ChartBar = React.forwardRef(({ className, ...props }, ref) => {
+    return <svg ref={ref} className={cn("fill-primary", className)} {...props} />;
+  });
+  
+  ChartBar.displayName = "ChartBar";
+
+  const ChartGrid = React.forwardRef(
+    ({ className, ...props }, ref) => {
+      return <svg ref={ref} className={cn("stroke-muted", className)} {...props} />
+    },
+  )
+  ChartGrid.displayName = "ChartGrid"
+  
+
+const ChartLine = React.forwardRef(
+    ({ className, ...props }, ref) => {
+      return <svg ref={ref} className={cn("stroke-primary", className)} {...props} />
+    },
+  )
+  ChartLine.displayName = "ChartLine"
+  
+  
+  const ChartXAxis = React.forwardRef(
+    ({ className, ...props }, ref) => {
+      return <svg ref={ref} className={cn("stroke-muted", className)} {...props} />
+    },
+  )
+  ChartXAxis.displayName = "ChartXAxis"
+  
+  const ChartYAxis = React.forwardRef(
+    ({ className, ...props }, ref) => {
+      return <svg ref={ref} className={cn("stroke-muted", className)} {...props} />
+    },
+  )
+  ChartYAxis.displayName = "ChartYAxis"
+
 export {
+    Chart,
+    ChartBar,
+    ChartGrid,
+    ChartLine,
+    ChartXAxis,
+    ChartYAxis,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
