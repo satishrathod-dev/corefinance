@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
@@ -72,7 +73,7 @@ export function MessageInput({ onSendMessage }) {
     <div className="space-y-2">
       {attachmentPreview && (
         <div className="relative w-32 h-32 rounded-md overflow-hidden">
-          <img
+          <Image
             src={attachmentPreview || "/placeholder.svg"}
             alt="Attachment preview"
             className="w-full h-full object-cover"

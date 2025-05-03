@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import MeetingDetails from "@/components/meetings/meeting-details"
 import { getMeetingById } from "@/components/meetings/meetings-data"

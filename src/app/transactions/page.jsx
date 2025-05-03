@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import { TransactionsOverview } from "@/components/transactions/transactions-overview"
 import { TransactionsList } from "@/components/transactions/transactions-list"
 import { TransactionChart } from "@/components/transactions/transaction-chart"

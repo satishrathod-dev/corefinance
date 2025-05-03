@@ -1,4 +1,3 @@
-import  { Metadata } from "next"
 import MeetingsOverview from "@/components/meetings/meetings-overview"
 
 export const metadata = {

@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -108,7 +109,7 @@ export function StickerPicker({ onStickerSelect }) {
               className="h-16 w-16 flex items-center justify-center rounded hover:bg-muted cursor-pointer"
               onClick={() => handleStickerClick(sticker)}
             >
-              <img
+              <Image
                 src={renderStickerImage(sticker) || "/placeholder.svg"}
                 alt={sticker.id}
                 className="max-h-full max-w-full object-contain"

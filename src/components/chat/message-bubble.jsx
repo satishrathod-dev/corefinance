@@ -3,6 +3,7 @@
 import { format } from "date-fns"
 import { Check, CheckCheck } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 export function MessageBubble({ message, isOwn }) {
   const getStatusIcon = () => {
@@ -25,14 +26,14 @@ export function MessageBubble({ message, isOwn }) {
       case "image":
         return (
           <div className="rounded-md overflow-hidden max-w-xs">
-            <img src={message.attachmentUrl || "/placeholder.svg"} alt="Image" className="w-full h-auto" />
+            <Image src={message.attachmentUrl || "/placeholder.svg"} alt="Image" className="w-full h-auto" />
             {message.content && <p className="mt-1 whitespace-pre-wrap break-words">{message.content}</p>}
           </div>
         )
       case "sticker":
         return (
           <div className="w-32 h-32">
-            <img
+            <Image
               src={message.attachmentUrl || "/placeholder.svg"}
               alt="Sticker"
               className="w-full h-full object-contain"

@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -22,7 +21,7 @@ import { useToast } from "@/components/ui/use-toast"
 export default function CreateMeeting() {
   const router = useRouter()
   const { toast } = useToast()
-  const [date, setDate] = useState<Date>(new Date())
+  const [date, setDate] = useState(new Date())
   const [startTime, setStartTime] = useState("09:00")
   const [endTime, setEndTime] = useState("10:00")
   const [formData, setFormData] = useState({
@@ -82,15 +81,14 @@ export default function CreateMeeting() {
     }
 
     // Process agenda items
-    const agendaItems = formData.agenda ? formData.agenda.split("\n").filter((item) => item.trim() !== "") : []
+    const agendaItems = typeof formData.agenda === "string"
+    ? formData.agenda.split("\n").filter((item) => item.trim() !== "")
+    : []
 
     // Process participants
-    const participantsList = formData.participants
-      ? formData.participants
-          .split(",")
-          .map((p) => p.trim())
-          .filter((p) => p !== "")
-      : []
+    const participantsList = typeof formData.participants === "string"
+    ? formData.participants.split(",").map((p) => p.trim()).filter((p) => p !== "")
+    : []
 
     // Create meeting object
     const newMeeting = {

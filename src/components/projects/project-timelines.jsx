@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { projects } from "@/components/projects/project-data"
 import { Timeline } from "@/components/projects/timeline"
@@ -13,8 +13,7 @@ export function ProjectTimelines() {
   const [searchTerm, setSearchTerm] = useState("")
   const [departmentFilter, setDepartmentFilter] = useState("all")
 
-  const allProjects = projects || []
-
+  const allProjects = useMemo(() => projects || [], [projects])
   const departments = [...new Set(allProjects.map((project) => project.department))]
 
   useEffect(() => {

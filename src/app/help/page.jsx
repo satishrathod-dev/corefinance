@@ -1,4 +1,3 @@
-import  { Metadata } from "next"
 import HelpOverview from "@/components/help/help-overview"
 
 export const metadata = {
