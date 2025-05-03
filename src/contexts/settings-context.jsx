@@ -3,11 +3,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 const defaultSettings = {
-  avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/38184074.jpg-M4vCjTSSWVw5RwWvvmrxXBcNVU8MBU.jpeg",
-  fullName: "Dollar Singh",
-  email: "dollar.singh@example.com",
+  avatar: "",
+  fullName: "Satish Rathod",
+  email: "satish.rathod@example.com",
   phone: "+1 (555) 123-4567",
-  timezone: "utc-8",
+  timezone: "utc+5.5",
   language: "en",
   currency: "usd",
   dateFormat: "mm-dd-yyyy",

@@ -24,9 +24,9 @@ export default function ContactInformation() {
               <CardContent>
                 <div className="space-y-2">
                   <p className="text-sm text-muted-foreground">For general inquiries and support requests</p>
-                  <p className="font-medium">support@flowersandsaints.com</p>
+                  <p className="font-medium">support@satishandfin.com</p>
                   <p className="text-sm text-muted-foreground">For billing and account questions</p>
-                  <p className="font-medium">billing@flowersandsaints.com</p>
+                  <p className="font-medium">billing@satishandfin.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -87,15 +87,15 @@ export default function ContactInformation() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  <p className="font-medium">Flowers & Saints Headquarters</p>
+                  <p className="font-medium">Satish & Fin Headquarters</p>
                   <p className="text-sm">
                     123 Business Avenue
                     <br />
                     Suite 456
                     <br />
-                    New York, NY 10001
+                    Mumbai, MI 10001
                     <br />
-                    United States
+                    India
                   </p>
                   <div className="pt-2">
                     <Button variant="outline" size="sm">

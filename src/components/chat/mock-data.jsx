@@ -3,7 +3,7 @@ export const mockConversations = [
     {
       id: "conv-1",
       name: "satish-rathod",
-      avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
+      avatar: "",
       lastMessage: {
         content: "Can you send me the financial report?",
         timestamp: "2023-07-20T14:30:00Z",
@@ -26,22 +26,22 @@ export const mockConversations = [
       participants: [
         {
           id: "user-1",
-          name: "Alex Johnson",
+          name: "Example User1",
           avatar:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/375238645_11475210.jpg-lU8bOe6TLt5Rv51hgjg8NT8PsDBmvN.jpeg",
+            "",
           isAdmin: true,
         },
         {
           id: "user-2",
-          name: "Samantha Lee",
+          name: "Example User2",
           avatar:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/375238208_11475222.jpg-poEIzVHAGiIfMFQ7EiF8PUG1u0Zkzz.jpeg",
+            "",
           isAdmin: false,
         },
         {
           id: "user-3",
-          name: "Michael Chen",
-          avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd.jpg-4MCwPC2Bec6Ume26Yo1kao3CnONxDg.jpeg",
+          name: "Example User3",
+          avatar: "",
           isAdmin: false,
         },
       ],
@@ -49,7 +49,7 @@ export const mockConversations = [
     {
       id: "conv-3",
       name: "David Kim",
-      avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
+      avatar: "",
       lastMessage: {
         content: "Let's discuss the new sales strategy",
         timestamp: "2023-07-19T16:45:00Z",
@@ -74,20 +74,20 @@ export const mockConversations = [
           id: "user-4",
           name: "Emily Rodriguez",
           avatar:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9334178.jpg-Y74tW6XFO68g7N36SE5MSNDNVKLQ08.jpeg",
+            "",
           isAdmin: true,
         },
         {
           id: "user-5",
           name: "David Kim",
-          avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
+          avatar: "",
           isAdmin: false,
         },
         {
           id: "user-6",
           name: "satish-rathod",
           avatar:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
+            "",
           isAdmin: false,
         },
       ],
@@ -96,7 +96,7 @@ export const mockConversations = [
       id: "conv-5",
       name: "James Taylor",
       avatar:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
+        "",
       lastMessage: {
         content: "I've updated the operations manual",
         timestamp: "2023-07-18T11:20:00Z",
@@ -108,7 +108,7 @@ export const mockConversations = [
     {
       id: "conv-6",
       name: "Lisa Brown",
-      avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
+      avatar: "",
       lastMessage: {
         content: "Customer feedback report is ready",
         timestamp: "2023-07-17T15:10:00Z",
@@ -279,7 +279,5 @@ export const mockConversations = [
       status: "read",
       type: "text",
     },
-  
-    // Add more mock messages for other conversations as needed
   ]
   

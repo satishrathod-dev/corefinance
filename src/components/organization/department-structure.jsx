@@ -20,75 +20,76 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Badge } from "@/components/ui/badge"
 
 const departments = [
-  {
-    id: 1,
-    name: "Engineering",
-    headCount: 78,
-    headOfDepartment: "Robert Chen",
-    subDepartments: [
-      { id: 101, name: "Frontend", headCount: 25, headOfDepartment: "Emma Johnson" },
-      { id: 102, name: "Backend", headCount: 30, headOfDepartment: "Michael Smith" },
-      { id: 103, name: "DevOps", headCount: 15, headOfDepartment: "Taylor Wong" },
-      { id: 104, name: "QA", headCount: 8, headOfDepartment: "Sarah Parker" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Marketing",
-    headCount: 45,
-    headOfDepartment: "Jessica Wilson",
-    subDepartments: [
-      { id: 201, name: "Digital Marketing", headCount: 18, headOfDepartment: "Daniel Lee" },
-      { id: 202, name: "Content Creation", headCount: 12, headOfDepartment: "Olivia Martinez" },
-      { id: 203, name: "Brand Management", headCount: 8, headOfDepartment: "James Harris" },
-      { id: 204, name: "Market Research", headCount: 7, headOfDepartment: "Sophia Chen" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Finance",
-    headCount: 25,
-    headOfDepartment: "William Davis",
-    subDepartments: [
-      { id: 301, name: "Accounting", headCount: 10, headOfDepartment: "Ava Robinson" },
-      { id: 302, name: "Financial Planning", headCount: 8, headOfDepartment: "Noah White" },
-      { id: 303, name: "Payroll", headCount: 7, headOfDepartment: "Mia Jackson" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Human Resources",
-    headCount: 15,
-    headOfDepartment: "Elizabeth Brown",
-    subDepartments: [
-      { id: 401, name: "Recruitment", headCount: 5, headOfDepartment: "Benjamin Thomas" },
-      { id: 402, name: "Employee Relations", headCount: 4, headOfDepartment: "Charlotte Garcia" },
-      { id: 403, name: "Training & Development", headCount: 6, headOfDepartment: "Liam Miller" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Sales",
-    headCount: 40,
-    headOfDepartment: "Christopher Martin",
-    subDepartments: [
-      { id: 501, name: "Inside Sales", headCount: 15, headOfDepartment: "Amelia Thompson" },
-      { id: 502, name: "Field Sales", headCount: 18, headOfDepartment: "Alexander Anderson" },
-      { id: 503, name: "Sales Operations", headCount: 7, headOfDepartment: "Harper Wilson" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Operations",
-    headCount: 30,
-    headOfDepartment: "Amanda Clark",
-    subDepartments: [
-      { id: 601, name: "Supply Chain", headCount: 12, headOfDepartment: "Oliver Wright" },
-      { id: 602, name: "Facilities Management", headCount: 8, headOfDepartment: "Abigail Nelson" },
-      { id: 603, name: "Logistics", headCount: 10, headOfDepartment: "Ethan Baker" },
-    ],
-  },
-]
+    {
+      id: 1,
+      name: "Engineering",
+      headCount: 78,
+      headOfDepartment: "Kabir Singh",
+      subDepartments: [
+        { id: 101, name: "Frontend", headCount: 25, headOfDepartment: "Satish Rathod" },
+        { id: 102, name: "Backend", headCount: 30, headOfDepartment: "Preeti Pawar" },
+        { id: 103, name: "DevOps", headCount: 15, headOfDepartment: "Ravi Iyer" },
+        { id: 104, name: "QA", headCount: 8, headOfDepartment: "Sneha Desai" },
+      ],
+    },
+    {
+      id: 2,
+      name: "Marketing",
+      headCount: 45,
+      headOfDepartment: "Neha Kapoor",
+      subDepartments: [
+        { id: 201, name: "Digital Marketing", headCount: 18, headOfDepartment: "Karan Mehra" },
+        { id: 202, name: "Content Creation", headCount: 12, headOfDepartment: "Isha Rani" },
+        { id: 203, name: "Brand Management", headCount: 8, headOfDepartment: "Aman Sheikh" },
+        { id: 204, name: "Market Research", headCount: 7, headOfDepartment: "Pooja Joshi" },
+      ],
+    },
+    {
+      id: 3,
+      name: "Finance",
+      headCount: 25,
+      headOfDepartment: "Ramesh Patil",
+      subDepartments: [
+        { id: 301, name: "Accounting", headCount: 10, headOfDepartment: "Meena Sharma" },
+        { id: 302, name: "Financial Planning", headCount: 8, headOfDepartment: "Vikas Rao" },
+        { id: 303, name: "Payroll", headCount: 7, headOfDepartment: "Swati Singh" },
+      ],
+    },
+    {
+      id: 4,
+      name: "Human Resources",
+      headCount: 15,
+      headOfDepartment: "Divya Nair",
+      subDepartments: [
+        { id: 401, name: "Recruitment", headCount: 5, headOfDepartment: "Rajeev Menon" },
+        { id: 402, name: "Employee Relations", headCount: 4, headOfDepartment: "Aarti Chauhan" },
+        { id: 403, name: "Training & Development", headCount: 6, headOfDepartment: "Nikhil Malhotra" },
+      ],
+    },
+    {
+      id: 5,
+      name: "Sales",
+      headCount: 40,
+      headOfDepartment: "Priya Sinha",
+      subDepartments: [
+        { id: 501, name: "Inside Sales", headCount: 15, headOfDepartment: "Manoj Bansal" },
+        { id: 502, name: "Field Sales", headCount: 18, headOfDepartment: "Simran Kaur" },
+        { id: 503, name: "Sales Operations", headCount: 7, headOfDepartment: "Deepak Choudhary" },
+      ],
+    },
+    {
+      id: 6,
+      name: "Operations",
+      headCount: 30,
+      headOfDepartment: "Arjun Reddy",
+      subDepartments: [
+        { id: 601, name: "Supply Chain", headCount: 12, headOfDepartment: "Farhan Ali" },
+        { id: 602, name: "Facilities Management", headCount: 8, headOfDepartment: "Nidhi Kulkarni" },
+        { id: 603, name: "Logistics", headCount: 10, headOfDepartment: "Harsh Vardhan" },
+      ],
+    },
+  ];
+  
 
 export function DepartmentStructure() {
   const [searchQuery, setSearchQuery] = useState("")

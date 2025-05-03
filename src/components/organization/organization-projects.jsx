@@ -35,18 +35,18 @@ const projects = [
         id: 1,
         name: "Alex Johnson",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/375238645_11475210.jpg-lU8bOe6TLt5Rv51hgjg8NT8PsDBmvN.jpeg",
+          "/375238645_11475210.jpg-lU8bOe6TLt5Rv51hgjg8NT8PsDBmvN.jpeg",
       },
       {
         id: 2,
         name: "Samantha Lee",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/375238208_11475222.jpg-poEIzVHAGiIfMFQ7EiF8PUG1u0Zkzz.jpeg",
+          "/375238208_11475222.jpg-poEIzVHAGiIfMFQ7EiF8PUG1u0Zkzz.jpeg",
       },
       {
         id: 3,
         name: "Michael Chen",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd.jpg-4MCwPC2Bec6Ume26Yo1kao3CnONxDg.jpeg",
+        avatar: "/dd.jpg-4MCwPC2Bec6Ume26Yo1kao3CnONxDg.jpeg",
       },
     ],
   },
@@ -63,12 +63,12 @@ const projects = [
         id: 4,
         name: "Emily Rodriguez",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9334178.jpg-Y74tW6XFO68g7N36SE5MSNDNVKLQ08.jpeg",
+          "/9334178.jpg-Y74tW6XFO68g7N36SE5MSNDNVKLQ08.jpeg",
       },
       {
         id: 5,
         name: "David Kim",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
+        avatar: "/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
       },
     ],
   },
@@ -85,13 +85,13 @@ const projects = [
         id: 6,
         name: "Sarah Wilson",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
+          "/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
       },
       {
         id: 7,
         name: "James Taylor",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
+          "/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
       },
     ],
   },
@@ -107,13 +107,13 @@ const projects = [
       {
         id: 8,
         name: "Lisa Brown",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
+        avatar: "/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
       },
       {
         id: 1,
         name: "Alex Johnson",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/375238645_11475210.jpg-lU8bOe6TLt5Rv51hgjg8NT8PsDBmvN.jpeg",
+          "/375238645_11475210.jpg-lU8bOe6TLt5Rv51hgjg8NT8PsDBmvN.jpeg",
       },
     ],
   },
@@ -129,13 +129,13 @@ const projects = [
       {
         id: 5,
         name: "David Kim",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
+        avatar: "/5295.jpg-fLw0wGGZp8wuTzU5dnyfjZDwAHN98a.jpeg",
       },
       {
         id: 7,
         name: "James Taylor",
         avatar:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
+          "/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
       },
     ],
   },
@@ -151,12 +151,12 @@ const projects = [
       {
         id: 3,
         name: "Michael Chen",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd.jpg-4MCwPC2Bec6Ume26Yo1kao3CnONxDg.jpeg",
+        avatar: "/dd.jpg-4MCwPC2Bec6Ume26Yo1kao3CnONxDg.jpeg",
       },
       {
         id: 8,
         name: "Lisa Brown",
-        avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
+        avatar: "/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
       },
     ],
   },

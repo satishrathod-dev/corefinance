@@ -15,15 +15,15 @@ import { toast } from "sonner"
 
 export function OrganizationSettings() {
   const [organizationInfo, setOrganizationInfo] = useState({
-    name: "Flowers & Saints Financial",
-    legalName: "Flowers & Saints Financial Inc.",
+    name: "Satish Financial Services",
+    legalName: "Satish Financial Services Inc.",
     industry: "Financial Services",
-    address: "123 Finance Street, New York, NY 10001",
-    website: "www.flowersandsaints.com",
-    email: "contact@flowersandsaints.com",
+    address: "123 Finance Street, Mumbai, MI 404040",
+    website: "www.satishandfin.com",
+    email: "contact@satishandfin.com",
     phone: "+1 (555) 123-4567",
     description:
-      "Flowers & Saints Financial provides cutting-edge financial services for individuals and businesses. Our mission is to empower our clients with the tools and knowledge they need to achieve financial success.",
+      "Satish Financial Services provides cutting-edge financial services for individuals and businesses. Our mission is to empower our clients with the tools and knowledge they need to achieve financial success.",
     logo: "/abstract-logo.png",
     taxId: "12-3456789",
     foundedYear: "2015",
@@ -57,8 +57,8 @@ export function OrganizationSettings() {
     seats: 250,
     usedSeats: 245,
     additionalFeatures: ["Advanced Analytics", "Premium Support", "Dedicated Account Manager"],
-    billingAddress: "123 Finance Street, New York, NY 10001",
-    billingEmail: "billing@flowersandsaints.com",
+    billingAddress: "123 Finance Street, Mumbai, MI 404040",
+    billingEmail: "billing@satishandfin.com",
     taxExempt: true,
   })
 
@@ -98,7 +98,7 @@ export function OrganizationSettings() {
               <div className="flex flex-col items-center space-y-2">
                 <Avatar className="h-24 w-24">
                   <AvatarImage src={organizationInfo.logo || "/placeholder.svg"} alt="Organization Logo" />
-                  <AvatarFallback>F&S</AvatarFallback>
+                  <AvatarFallback>S&R</AvatarFallback>
                 </Avatar>
                 <Button variant="outline" size="sm" className="gap-1">
                   <UploadCloud className="h-4 w-4" /> Change Logo
