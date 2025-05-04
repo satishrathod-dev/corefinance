@@ -5,7 +5,7 @@ const recentTransactions = [
   {
     id: "1",
     name: "Satish Rathod",
-    email: "alice@example.com",
+    email: "satish@example.com",
     amount: "+$350.00",
     status: "success",
     date: "2023-07-20",
