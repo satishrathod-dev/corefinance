@@ -4,32 +4,32 @@ import { Card, CardContent } from "@/components/ui/card"
 const userActivities = [
   {
     id: "1",
-    user: "Fiona Garcia",
+    user: "Satish Rathod",
     action: "Logged in",
     time: "2 minutes ago",
-    avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
+    avatar: "/9720029.jpg-Yf9h2a3kT7rYyCb648iLIeHThq5wEy.jpeg",
   },
   {
     id: "2",
-    user: "George Lee",
+    user: "Test User",
     action: "Updated profile",
     time: "10 minutes ago",
     avatar:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
+      "/27470341_7294795.jpg-XE0zf7R8tk4rfA1vm4fAHeZ1QoVEOo.jpeg",
   },
   {
     id: "3",
-    user: "Hannah Kim",
+    user: "Test User",
     action: "Made a transfer",
     time: "15 minutes ago",
-    avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
+    avatar: "/799.jpg-0tEi4Xvg5YsFoGoQfQc698q4Dygl1S.jpeg",
   },
   {
     id: "4",
-    user: "Ian Foster",
+    user: "Test User",
     action: "Opened new account",
     time: "30 minutes ago",
-    avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9334228.jpg-eOsHCkvVrVAwcPHKYSs5sQwVKsqWpC.jpeg",
+    avatar: "/9334228.jpg-eOsHCkvVrVAwcPHKYSs5sQwVKsqWpC.jpeg",
   },
 ]
 

@@ -88,7 +88,7 @@ export default function HelpCategories({ onSelectCategory }) {
             <CardDescription>{category.description}</CardDescription>
           </CardContent>
           <CardFooter>
-            <Button variant="ghost" className="w-full bg-gray-500" onClick={category.action}>
+            <Button variant="ghost" className="w-full bg-[#868a84]" onClick={category.action}>
               Explore
             </Button>
           </CardFooter>

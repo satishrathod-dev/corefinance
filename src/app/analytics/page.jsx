@@ -11,7 +11,7 @@ import { Download } from "lucide-react"
 
 export default function AnalyticsPage() {
   const handleExportData = () => {
-    // Implement export functionality here
+    // Export functionality here
     console.log("Exporting data...")
   }
 

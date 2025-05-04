@@ -1,131 +1,126 @@
 // Mock data for conversations
 export const mockConversations = [
-    {
-      id: "conv-1",
-      name: "satish-rathod",
-      avatar: "",
-      lastMessage: {
-        content: "Can you send me the financial report?",
-        timestamp: "2023-07-20T14:30:00Z",
-      },
-      unreadCount: 2,
-      isOnline: true,
-      isGroup: false,
+  {
+    id: "conv-1",
+    name: "Test User",
+    avatar: "",
+    lastMessage: {
+      content: "Can you send me the financial report?",
+      timestamp: "2023-07-20T14:30:00Z",
     },
-    {
-      id: "conv-2",
-      name: "Marketing Team",
-      avatar: "",
-      lastMessage: {
-        content: "Meeting at 3 PM today",
-        timestamp: "2023-07-20T10:15:00Z",
-      },
-      unreadCount: 0,
-      isOnline: false,
-      isGroup: true,
-      participants: [
-        {
-          id: "user-1",
-          name: "Example User1",
-          avatar:
-            "",
-          isAdmin: true,
-        },
-        {
-          id: "user-2",
-          name: "Example User2",
-          avatar:
-            "",
-          isAdmin: false,
-        },
-        {
-          id: "user-3",
-          name: "Example User3",
-          avatar: "",
-          isAdmin: false,
-        },
-      ],
+    unreadCount: 2,
+    isOnline: true,
+    isGroup: false,
+  },
+  {
+    id: "conv-2",
+    name: "Marketing Team",
+    avatar: "",
+    lastMessage: {
+      content: "Meeting at 3 PM today",
+      timestamp: "2023-07-20T10:15:00Z",
     },
-    {
-      id: "conv-3",
-      name: "David Kim",
-      avatar: "",
-      lastMessage: {
-        content: "Let's discuss the new sales strategy",
-        timestamp: "2023-07-19T16:45:00Z",
+    unreadCount: 0,
+    isOnline: false,
+    isGroup: true,
+    participants: [
+      {
+        id: "user-1",
+        name: "Test User",
+        avatar: "",
+        isAdmin: true,
       },
-      unreadCount: 0,
-      isOnline: true,
-      isGroup: false,
-    },
-    {
-      id: "conv-4",
-      name: "Finance Department",
-      avatar: "",
-      lastMessage: {
-        content: "Budget updates for Q3",
-        timestamp: "2023-07-19T09:30:00Z",
+      {
+        id: "user-2",
+        name: "Test User",
+        avatar: "",
+        isAdmin: false,
       },
-      unreadCount: 5,
-      isOnline: false,
-      isGroup: true,
-      participants: [
-        {
-          id: "user-4",
-          name: "Emily Rodriguez",
-          avatar:
-            "",
-          isAdmin: true,
-        },
-        {
-          id: "user-5",
-          name: "David Kim",
-          avatar: "",
-          isAdmin: false,
-        },
-        {
-          id: "user-6",
-          name: "satish-rathod",
-          avatar:
-            "",
-          isAdmin: false,
-        },
-      ],
-    },
-    {
-      id: "conv-5",
-      name: "James Taylor",
-      avatar:
-        "",
-      lastMessage: {
-        content: "I've updated the operations manual",
-        timestamp: "2023-07-18T11:20:00Z",
+      {
+        id: "user-3",
+        name: "Test User",
+        avatar: "",
+        isAdmin: false,
       },
-      unreadCount: 0,
-      isOnline: false,
-      isGroup: false,
+    ],
+  },
+  {
+    id: "conv-3",
+    name: "Test User",
+    avatar: "",
+    lastMessage: {
+      content: "Let's discuss the new sales strategy",
+      timestamp: "2023-07-19T16:45:00Z",
     },
-    {
-      id: "conv-6",
-      name: "Lisa Brown",
-      avatar: "",
-      lastMessage: {
-        content: "Customer feedback report is ready",
-        timestamp: "2023-07-17T15:10:00Z",
+    unreadCount: 0,
+    isOnline: true,
+    isGroup: false,
+  },
+  {
+    id: "conv-4",
+    name: "Finance Department",
+    avatar: "",
+    lastMessage: {
+      content: "Budget updates for Q3",
+      timestamp: "2023-07-19T09:30:00Z",
+    },
+    unreadCount: 5,
+    isOnline: false,
+    isGroup: true,
+    participants: [
+      {
+        id: "user-4",
+        name: "Test User",
+        avatar: "",
+        isAdmin: true,
       },
-      unreadCount: 0,
-      isOnline: true,
-      isGroup: false,
+      {
+        id: "user-5",
+        name: "Test User",
+        avatar: "",
+        isAdmin: false,
+      },
+      {
+        id: "user-6",
+        name: "Test User",
+        avatar: "",
+        isAdmin: false,
+      },
+    ],
+  },
+  {
+    id: "conv-5",
+    name: "Test User",
+    avatar: "",
+    lastMessage: {
+      content: "I've updated the operations manual",
+      timestamp: "2023-07-18T11:20:00Z",
     },
-  ]
+    unreadCount: 0,
+    isOnline: false,
+    isGroup: false,
+  },
+  {
+    id: "conv-6",
+    name: "Test User",
+    avatar: "",
+    lastMessage: {
+      content: "Customer feedback report is ready",
+      timestamp: "2023-07-17T15:10:00Z",
+    },
+    unreadCount: 0,
+    isOnline: true,
+    isGroup: false,
+  },
+];
+
   
   // Mock data for messages
   export const mockMessages = [
-    // Conversation 1 - satish-rathod
     {
       id: "msg-1-1",
       conversationId: "conv-1",
-      senderId: "satish-rathod",
+      senderId: "Test User",
       content: "Hi there! How's the quarterly financial report coming along?",
       timestamp: "2023-07-20T14:25:00Z",
       status: "read",
@@ -143,7 +138,7 @@ export const mockConversations = [
     {
       id: "msg-1-3",
       conversationId: "conv-1",
-      senderId: "satish-rathod",
+      senderId: "Test User",
       content: "Great! When do you think you can send it over?",
       timestamp: "2023-07-20T14:28:00Z",
       status: "read",
@@ -161,7 +156,7 @@ export const mockConversations = [
     {
       id: "msg-1-5",
       conversationId: "conv-1",
-      senderId: "satish-rathod",
+      senderId: "Test User",
       content: "Can you send me the financial report?",
       timestamp: "2023-07-20T14:30:00Z",
       status: "delivered",
@@ -170,18 +165,18 @@ export const mockConversations = [
     {
       id: "msg-1-6",
       conversationId: "conv-1",
-      senderId: "satish-rathod",
+      senderId: "Test User",
       content: "Actually, could you share it here instead? It would be easier to discuss.",
       timestamp: "2023-07-20T14:31:00Z",
       status: "delivered",
       type: "text",
     },
   
-    // Conversation 2 - Marketing Team
+    // Conversation 2
     {
       id: "msg-2-1",
       conversationId: "conv-2",
-      senderId: "alex-johnson",
+      senderId: "Test User",
       content: "Hey team, we need to discuss the new campaign strategy.",
       timestamp: "2023-07-20T10:00:00Z",
       status: "read",
@@ -190,7 +185,7 @@ export const mockConversations = [
     {
       id: "msg-2-2",
       conversationId: "conv-2",
-      senderId: "samantha-lee",
+      senderId: "Test User",
       content: "I've prepared some ideas. Should we meet to go over them?",
       timestamp: "2023-07-20T10:05:00Z",
       status: "read",
@@ -208,7 +203,7 @@ export const mockConversations = [
     {
       id: "msg-2-4",
       conversationId: "conv-2",
-      senderId: "alex-johnson",
+      senderId: "Test User",
       content: "How about 3 PM today?",
       timestamp: "2023-07-20T10:12:00Z",
       status: "read",
@@ -217,7 +212,7 @@ export const mockConversations = [
     {
       id: "msg-2-5",
       conversationId: "conv-2",
-      senderId: "michael-chen",
+      senderId: "Test User",
       content: "Works for me!",
       timestamp: "2023-07-20T10:13:00Z",
       status: "read",
@@ -226,7 +221,7 @@ export const mockConversations = [
     {
       id: "msg-2-6",
       conversationId: "conv-2",
-      senderId: "samantha-lee",
+      senderId: "Test User",
       content: "Same here.",
       timestamp: "2023-07-20T10:14:00Z",
       status: "read",
@@ -235,18 +230,18 @@ export const mockConversations = [
     {
       id: "msg-2-7",
       conversationId: "conv-2",
-      senderId: "alex-johnson",
+      senderId: "Test User",
       content: "Meeting at 3 PM today",
       timestamp: "2023-07-20T10:15:00Z",
       status: "read",
       type: "text",
     },
   
-    // Conversation 3 - David Kim
+    // Conversation 3
     {
       id: "msg-3-1",
       conversationId: "conv-3",
-      senderId: "david-kim",
+      senderId: "Test User",
       content: "Hi, I wanted to discuss our sales strategy for the next quarter.",
       timestamp: "2023-07-19T16:40:00Z",
       status: "read",
@@ -264,7 +259,7 @@ export const mockConversations = [
     {
       id: "msg-3-3",
       conversationId: "conv-3",
-      senderId: "david-kim",
+      senderId: "Test User",
       content: "I think we should focus more on enterprise clients. They've been showing more interest lately.",
       timestamp: "2023-07-19T16:44:00Z",
       status: "read",
@@ -273,11 +268,12 @@ export const mockConversations = [
     {
       id: "msg-3-4",
       conversationId: "conv-3",
-      senderId: "david-kim",
+      senderId: "Test User",
       content: "Let's discuss the new sales strategy",
       timestamp: "2023-07-19T16:45:00Z",
       status: "read",
       type: "text",
     },
-  ]
+  ];
+  
   
