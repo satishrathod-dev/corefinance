@@ -25,7 +25,7 @@ import { Button } from "@/components/ui/button"
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
 
 const navigation = [
-  { name: "Dashboard", href: "/", icon: Home },
+  { name: "Dashboard", href: "/dashboard", icon: Home },
   { name: "Analytics", href: "/analytics", icon: BarChart2 },
   { name: "Organization", href: "/organization", icon: Building2 },
   { name: "Projects", href: "/projects", icon: Folder },
@@ -50,6 +50,7 @@ export function Sidebar() {
 
   // Update the NavItem component to ensure icons are visible in both themes
   const NavItem = ({ item, isBottom = false }) => (
+    // console.log("item", item),
     <Tooltip delayDuration={0}>
       <TooltipTrigger asChild>
         <Link
@@ -57,7 +58,7 @@ export function Sidebar() {
           className={cn(
             "flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors",
             pathname === item.href
-              ? "bg-secondary text-secondary-foreground"
+              ? "bg-gray text-secondary-foreground"
               : "text-muted-foreground hover:bg-secondary hover:text-secondary-foreground",
             isCollapsed && "justify-center px-2",
           )}

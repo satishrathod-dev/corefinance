@@ -12,6 +12,7 @@ import { Download } from "lucide-react"
 export default function AnalyticsPage() {
   const handleExportData = () => {
     // Export functionality here
+    // add download pdf api implementation here
     console.log("Exporting data...")
   }
 

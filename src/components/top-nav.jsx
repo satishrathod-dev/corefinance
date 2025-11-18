@@ -2,7 +2,7 @@
 import { ThemeToggle } from "./theme-toggle"
 import { Notifications } from "./notifications"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useSettings } from "@/contexts/settings-context"
 import {
   DropdownMenu,
@@ -20,6 +20,12 @@ export function TopNav() {
   const pathname = usePathname()
   const pathSegments = pathname.split("/").filter(Boolean)
   const { settings } = useSettings()
+  const router = useRouter();
+
+  const handleClick = () => {
+    alert("btn clicked!")
+    router.replace("/")
+  }
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background">
@@ -73,7 +79,7 @@ export function TopNav() {
               <DropdownMenuItem asChild>
                 <Link href="/settings">Settings</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>Log out</DropdownMenuItem>
+              <DropdownMenuItem onClick={handleClick}>Log out</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
