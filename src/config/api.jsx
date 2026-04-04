@@ -46,18 +46,18 @@ export const Login = async (params) => {
       body: JSON.stringify(params),
     });
     console.log("response", response);
-    if (!response.ok) {
-      const errorData = await response.json();
-
-      if (response.status === 422) {
-      }
-      return { error: errorData, response };
-    }
+    
     const data = await response.json();
+
+    if(!response.ok) {
+      throw new Error(data.message || "Login failed")
+    }
     // ("API Response:", data);
     console.log("response from login", data);
 
-    return { response, data };
+    // return { response, data };
+    return data;
+
   } catch (error) {
     return {
       success: false,

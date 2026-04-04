@@ -15,6 +15,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false)
 
   const router = useRouter();
 
@@ -36,12 +37,9 @@ export default function LoginPage() {
 
       const response = await Login(reqBody);
       console.log("response from api call", response);
-      if (response?.error) {
-        toast.error(response.error.message);
-        return;
-      }
 
       const { responseCode, responseMessage } = response.data;
+      // console.log("login response", response)
 
       if (responseCode === 200) {
         toast.success("Login successful!!");
