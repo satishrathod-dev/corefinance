@@ -2,73 +2,60 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Mail, Lock, AlertCircle } from "lucide-react";
+import { Mail, Lock, AlertCircle, Eye, EyeOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Login } from "@/config/api";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/contexts/auth-context";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
+  const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validate form
+    setError("");
+
     if (!email || !password) {
       setError("All fields are required");
       return;
     }
 
-    const reqBody = {
-      email: email,
-      password: password,
-    };
-
     try {
       setIsLoading(true);
 
-      const response = await Login(reqBody);
-      console.log("response from api call", response);
-      if (response?.error) {
-        toast.error(response.error.message);
+      const response = await Login({ email, password });
+
+      if (response.success === false) {
+        setError(response.error);
+        toast.error(response.error);
         return;
       }
 
-      const { responseCode, responseMessage } = response.data;
+      const { responseCode, user } = response;
 
       if (responseCode === 200) {
-        toast.success("Login successful!!");
-        console.log("hii")
-        setTimeout(() => {
-          router.push("/dashboard");
-        }, 2000);
-        setIsSuccess(true);
+        // accessToken is already stored in memory by Login()
+        // Set user in auth context
+        login(user);
+        toast.success("Login successful!");
+        router.push("/dashboard");
       }
-
-      setUser({
-        email: "",
-        password: "",
-      });
-      // Simulate API call
     } catch (err) {
-      console.log("error", err);
-      toast.error("Login failed", err);
+      setError(err.message || "Login failed");
+      toast.error("Login failed");
     } finally {
       setIsLoading(false);
     }
-
-    // setTimeout(() => {
-    //   setIsLoading(false);
-    //   // For demo purposes only
-    //   window.location.href = "/dashboard";
-    // }, 1000);
   };
 
   return (
@@ -116,12 +103,19 @@ export default function LoginPage() {
                 <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                 <Input
                   id="password"
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
-                  className="pl-10"
+                  className="pl-10 pr-10"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
+                <button
+                  type="button"
+                  className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                </button>
               </div>
             </div>
 

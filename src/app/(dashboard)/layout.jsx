@@ -7,6 +7,7 @@ import { TopNav } from "@/components/top-nav";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SettingsProvider } from "@/contexts/settings-context";
 import { Toaster } from "@/components/ui/toaster";
+import { AuthGuard } from "@/components/auth-guard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,9 @@ export default function RootLayout({ children }) {
                 <div className="flex-1">
                   <TopNav />
                   <div className="container mx-auto p-6 max-w-7xl">
-                    <main className="w-full">{children}</main>
+                    <main className="w-full">
+                      <AuthGuard>{children}</AuthGuard>
+                    </main>
                   </div>
                 </div>
               </div>
